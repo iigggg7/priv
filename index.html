@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Interwebz Records</title>
+  <meta name="description" content="Interwebz Records" />
+  <style>
+    :root {
+      --bg: #050608;
+      --surface: #0d0f12;
+      --border: #24262b;
+      --accent: #00d0ff;
+      --text: #f4f5f7;
+      --muted: #8a8f98;
+      --radius: 8px;
+      --max-width: 640px;
+      --ui: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--ui);
+      background: var(--bg);
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+      display: flex;
+      justify-content: center;
+      padding: 32px 16px;
+    }
+
+    main {
+      width: 100%;
+      max-width: var(--max-width);
+      margin: auto;
+    }
+
+    .page {
+      background: var(--surface);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      padding: 24px 20px 20px;
+    }
+
+    .site-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: inherit;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.98rem;
+    }
+
+    .logo svg {
+      color: var(--accent);
+    }
+
+    .brand {
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+    }
+
+    .status {
+      margin: 0;
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .title {
+      margin: 0 0 6px 0;
+      font-size: clamp(1.4rem, 4vw, 1.8rem);
+      font-weight: 600;
+    }
+
+    .tagline {
+      margin: 0 0 16px 0;
+      font-size: 0.95rem;
+      color: var(--muted);
+      max-width: 36rem;
+    }
+
+    .panel {
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      padding: 14px 14px 12px;
+      margin: 10px 0;
+    }
+
+    .panel h2 {
+      margin: 0 0 10px;
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 600;
+      color: var(--muted);
+    }
+
+    .releases {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .release {
+      padding: 8px 0;
+      border-top: 1px solid #181a1f;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      font-size: 0.95rem;
+    }
+
+    .release:first-child {
+      border-top: none;
+    }
+
+    .release strong {
+      font-weight: 500;
+    }
+
+    .meta {
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .small {
+      font-size: 0.82rem;
+    }
+
+    .site-footer {
+      margin-top: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      border-top: 1px solid var(--border);
+      padding-top: 10px;
+    }
+
+    .social {
+      display: flex;
+      gap: 10px;
+      font-size: 0.8rem;
+    }
+
+    .social a {
+      color: var(--muted);
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .social a:hover {
+      text-decoration: underline;
+      color: var(--text);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    a:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+      border-radius: 3px;
+    }
+
+    @media (max-width: 520px) {
+      .page {
+        padding: 20px 16px 16px;
+      }
+      .site-header,
+      .site-footer {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="site-header" role="banner">
+      <a class="logo" href="/" aria-label="Interwebz Records home">
+        <svg width="32" height="32" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+          <rect width="48" height="48" rx="6" fill="currentColor" />
+          <circle cx="24" cy="18" r="6" fill="#050608" />
+        </svg>
+        <span class="brand">Interwebz Records</span>
+      </a>
+
+    </header>
+
+    <section class="content">
+      <h1 class="title">Interwebz Records</h1>
+      <p class="tagline">
+        A small label for bold digital sounds. Work in progess..
+      </p>
+
